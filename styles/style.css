@@ -48,7 +48,7 @@
     color: #5D58EF;
 }
 section{
-    padding: 80px 0px;
+    padding: 60px 0px;
 }
 .section-title{
     font-size: 2.86rem;
@@ -63,7 +63,13 @@ section{
     width: 197px;
     font-size: 1.25rem;
 }
-
+.box-title{
+    font-size: 1.5rem;
+}
+.box-description{
+    max-width: 286px;
+    color: #808080;
+}
 /* Header related styles */
 /* nav bar styles */
 .navbar{
@@ -115,6 +121,52 @@ section{
     margin: 20px 0px;
 }
 /* Main related styles */
+/* Curriculum styles */
+.curriculum{
+    flex-direction: column;
+    margin: 0px auto;
+    text-align: center;
+    gap: 80px;
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.curriculum-container{
+    gap: 28px;
+}
+.blue-gradient{
+    background: linear-gradient(to bottom, #DEF5FF, #FFFFFF 40%);
+}
+.orange-gradient{
+    background: linear-gradient(to bottom, #FFF4DC, #FFFFFF 40%);
+}
+.purple-gradient{
+    background: linear-gradient(to bottom, #EEE1FF, #FFFFFF 40%);
+}
+.c-box{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 367px;
+    border-radius: 18px;
+    padding: 50px 40px;
+    box-shadow: inset 0px 0px 28px rgba(0, 0, 0, 0.05);
+}
+.c-button{
+    background-color: orange;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.read-more{
+    font-size: 1rem;
+    font-weight: 700;
+    /* color: orange; */
+}
 
 /* Footer related styles */
 
@@ -131,5 +183,14 @@ section{
     }
     #nav-icon{
         display: block;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .btext-area{
+        text-align: center;
+    }
+    .curriculum-container{
+        flex-direction: column;
     }
 }
