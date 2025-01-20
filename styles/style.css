@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-style: normal;
+}
+.bold{
+    font-weight: 700;
+}
+.medium{
+    font-weight: 500;
+}
+.semibold{
+    font-weight: 600;
+}
+.raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-size: 0.94rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+*{
+    margin: 0px auto;
+}
+
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.orange{
+    color: orange;
+}
+.skyblue{
+    color: #01ACFD;
+}
+.skyblue2{
+    color: #05D4DF;
+}
+.color1{
+    color: #5D58EF;
+}
+section{
+    padding: 80px 0px;
+}
+.section-title{
+    font-size: 2.86rem;
+    font-weight: 700;
+}
+.btn-primary{
+    color: #FFFFFF;
+    background-color: black;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    width: 197px;
+}
+
+/* Header related styles */
+/* nav bar styles */
+nav{
+    margin: 20px;
+}
+.navbar{
+    align-items: center;
+    gap: 186px;
+}
+.nav-icon{
+    align-items: center;
+}
+.nav-title{
+    font-size: 2rem;
+    color: black;
+}
+.nav-button{
+    background-color: orange;
+    font-weight: 600;
+}
+
+.nav-links{
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 0px;
+}
+.nav-links a{
+    text-decoration: none;
+}
+/* Main related styles */
+
+/* Footer related styles */
