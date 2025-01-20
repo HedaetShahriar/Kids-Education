@@ -16,6 +16,9 @@
 .semibold{
     font-weight: 600;
 }
+.regular{
+    font-weight: 400;
+}
 .raleway-font {
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
@@ -58,18 +61,18 @@ section{
     border-radius: 12px;
     padding: 10px;
     width: 197px;
+    font-size: 1.25rem;
 }
 
 /* Header related styles */
 /* nav bar styles */
-nav{
-    margin: 20px;
-}
 .navbar{
+    margin-top: 20px;
+    margin-bottom: 20px;
     align-items: center;
-    gap: 186px;
+    justify-content: space-between;
 }
-.nav-icon{
+.nav-logo{
     align-items: center;
 }
 .nav-title{
@@ -90,6 +93,43 @@ nav{
 .nav-links a{
     text-decoration: none;
 }
+#nav-icon{
+    display: none;
+}
+/* banner styles */
+.banner{
+    margin: 0px auto;
+    align-items: center;
+    gap: 50px;
+}
+.banner-img{
+    width: 100%;
+}
+.btext-area{
+    max-width: 640px;
+}
+.banner-title{
+    font-size: 3.5rem;
+}
+.banner-description{
+    margin: 20px 0px;
+}
 /* Main related styles */
 
 /* Footer related styles */
+
+/* media related styles */
+@media screen and (max-width: 576px){
+    .nav-title{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav-links{
+        display: none;
+    }
+    #nav-icon{
+        display: block;
+    }
+}
