@@ -129,7 +129,6 @@ section{
     gap: 80px;
     background-image: url('../assets/bg.png');
     background-size: cover;
-    background-repeat: no-repeat;
 }
 .curriculum-container{
     gap: 28px;
@@ -167,9 +166,32 @@ section{
     font-weight: 700;
     /* color: orange; */
 }
-
+/* Stories section styles */
+.stories{
+    flex-direction: column;
+    gap: 80px;
+    text-align: center;
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(to top, #FFF4DC, #FFFFFF);
+}
 /* Footer related styles */
-
+.footer ul{
+    list-style-type: none;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer{
+    background-color: #01ACFD;
+    padding: 60px 0px;
+    gap: 40px;
+}
+.footer-description{
+    color: white;
+    max-width: 400px;
+}
 /* media related styles */
 @media screen and (max-width: 576px){
     .nav-title{
@@ -190,7 +212,8 @@ section{
     .btext-area{
         text-align: center;
     }
-    .curriculum-container{
+    .curriculum-container,
+    .footer-container{
         flex-direction: column;
     }
 }
