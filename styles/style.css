@@ -395,7 +395,7 @@ section{
         width: 92px;
     }
     .c-box{
-        width: calc(90% - 50px);
+        width: calc(90% - 65px);
     }
     .marquee{
         font-size: 0.8rem;
