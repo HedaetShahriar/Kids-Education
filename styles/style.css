@@ -28,7 +28,7 @@
 }
 
 *{
-    margin: 0px auto;
+    margin: 0px;
 }
 
 /* shared styles */
@@ -73,8 +73,8 @@ section{
 /* Header related styles */
 /* nav bar styles */
 .navbar{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    max-width: 1160px;
+    margin: 20px auto;
     align-items: center;
     justify-content: space-between;
 }
@@ -104,6 +104,7 @@ section{
 }
 /* banner styles */
 .banner{
+    max-width: 1160px;
     margin: 0px auto;
     align-items: center;
     gap: 50px;
@@ -124,13 +125,14 @@ section{
 /* Curriculum styles */
 .curriculum{
     flex-direction: column;
-    margin: 0px auto;
     text-align: center;
     gap: 80px;
     background-image: url('../assets/bg.png');
     background-size: cover;
 }
 .curriculum-container{
+    max-width: 1160px;
+    margin: 0px auto;
     gap: 28px;
 }
 .blue-gradient{
@@ -150,6 +152,11 @@ section{
     border-radius: 18px;
     padding: 50px 40px;
     box-shadow: inset 0px 0px 28px rgba(0, 0, 0, 0.05);
+}
+.cbutton-area{
+    text-align: center;
+    margin: 0px auto;
+    max-width: 130px;
 }
 .c-button{
     background-color: orange;
@@ -176,21 +183,59 @@ section{
     background-repeat: no-repeat;
     background: linear-gradient(to top, #FFF4DC, #FFFFFF);
 }
+.stories-container{
+    max-width: 1160px;
+    margin: 0px auto;
+}
 /* Footer related styles */
 .footer ul{
     list-style-type: none;
+    padding: 0px;
+    gap: 10px;
+    margin-top: 32px;
 }
 .footer a{
     text-decoration: none;
+    color: white;
 }
 .footer{
     background-color: #01ACFD;
     padding: 60px 0px;
     gap: 40px;
 }
+.footer-container{
+    max-width: 1160px;
+    margin: 0px auto;
+    justify-content: space-between;
+}
 .footer-description{
     color: white;
     max-width: 400px;
+}
+.footer-title{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.f-imgtext{
+    color: white;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 0;
+}
+.kids-education{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.footer-img{
+    margin: 0px;
+    height: 100%;
+}
+.footer-logo{
+    align-items: center;
+    width: 300px;
+    height: 80px;
 }
 /* media related styles */
 @media screen and (max-width: 576px){
