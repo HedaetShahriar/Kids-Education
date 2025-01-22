@@ -174,25 +174,87 @@ section{
     /* color: orange; */
 }
 /* Stories section styles */
+.text-center{
+    text-align: center;
+}
+.margin-auto{
+    margin: 0px auto;
+}
 .stories{
     flex-direction: column;
     gap: 80px;
-    text-align: center;
     background-image: url('../assets/bg.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background: linear-gradient(to top, #FFF4DC, #FFFFFF);
 }
+.story1{
+    grid-area: story1;
+}
+.story2{
+    grid-area: story2;
+}
+.story3{
+    grid-area: story3;
+}
+.story4{
+    grid-area: story4;
+}
+.story5{
+    grid-area: story5;
+}
+.story2 h3, .story3 h3, .story4 h3, .story5 h3{
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 15px 25px 25px 25px;
+}
+    
 .stories-container{
     max-width: 1160px;
     margin: 0px auto;
+    display: grid;
+    grid-template-areas: 
+        'story1 story1 story2 story3'
+        'story1 story1 story4 story5';
+    ;
+    gap: 20px;
+
 }
+.story-box{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    max-width: 540px;
+    max-height: 630px;
+}
+.story-img{
+    border-radius: 16px 16px 0px 0px;
+    width: 100%;
+}
+.story-description{
+    color: #808080;
+    margin: 0px 32px 32px 32px;
+}
+.story-title{
+    font-size: 1.5rem;
+    margin: 20px 32px 32px 32px;
+}
+.round-box{
+    color: white;
+    padding: 15px 20px;
+    background-color: #3CD8E8;
+    border-radius: 48px;
+    max-width: 135px;
+    margin: -35px 0px 0px 32px;
+    position: relative;
+}
+
 /* Footer related styles */
 .footer ul{
     list-style-type: none;
     padding: 0px;
     gap: 10px;
     margin-top: 32px;
+    margin-bottom: 32px;
 }
 .footer a{
     text-decoration: none;
@@ -204,13 +266,14 @@ section{
     gap: 40px;
 }
 .footer-container{
-    max-width: 1160px;
+    max-width: 1070px;
     margin: 0px auto;
     justify-content: space-between;
 }
 .footer-description{
     color: white;
     max-width: 400px;
+    margin-bottom: 32px;
 }
 .footer-title{
     color: white;
@@ -260,5 +323,21 @@ section{
     .curriculum-container,
     .footer-container{
         flex-direction: column;
+    }
+    .stories-container{
+        max-width: 1160px;
+        margin: 0px auto;
+        display: grid;
+        grid-template-areas: 
+            'story2 story3'
+            'story4 story5';
+        ;
+        gap: 20px;
+    }
+    .story1{
+        display: none;
+    }
+    .cbutton-area{
+        display: none;
     }
 }
