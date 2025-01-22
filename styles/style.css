@@ -124,22 +124,27 @@ section{
 .banner-description{
     margin: 20px 0px;
 }
+
+
 /* marquee */
+
+
 .marquee{
     margin: 0px auto;
     background-color: #a4ddb5;
     color: #31312f;
-    padding: 10px;
-    font-size: 1.8rem;
+    padding: 5px;
+    font-size: 1.25rem;
 }
+
+
 /* Main related styles */
 /* Curriculum styles */
 .curriculum{
     flex-direction: column;
     text-align: center;
     gap: 80px;
-    background-image: url('../assets/bg.png');
-    background-size: cover;
+    background: url('../assets/bg.png') no-repeat center center / cover;
 }
 .curriculum-container{
     max-width: 1160px;
@@ -390,9 +395,10 @@ section{
         width: 92px;
     }
     .c-box{
-        width: calc(100% - 10px);
+        width: calc(90% - 50px);
     }
     .marquee{
-        font-size: 1.25rem;
+        font-size: 0.8rem;
+        padding: 5px;
     }
 }
