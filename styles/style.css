@@ -63,6 +63,9 @@ section{
     width: 197px;
     font-size: 1.25rem;
 }
+.btn-primary:hover{
+    background-color: #5D58EF;
+}
 .box-title{
     font-size: 1.5rem;
 }
@@ -121,6 +124,14 @@ section{
 .banner-description{
     margin: 20px 0px;
 }
+/* marquee */
+.marquee{
+    margin: 0px auto;
+    background-color: #a4ddb5;
+    color: #31312f;
+    padding: 10px;
+    font-size: 1.8rem;
+}
 /* Main related styles */
 /* Curriculum styles */
 .curriculum{
@@ -147,6 +158,7 @@ section{
 .c-box{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 32px;
     max-width: 367px;
     border-radius: 18px;
@@ -168,7 +180,14 @@ section{
     font-size: 1.5rem;
     font-weight: 700;
 }
+.c-button:hover{
+    background-color: #5D58EF;
+}
+.c-img{
+    width: 136px;
+}
 .read-more{
+    text-decoration: none;
     font-size: 1rem;
     font-weight: 700;
     /* color: orange; */
@@ -183,10 +202,18 @@ section{
 .stories{
     flex-direction: column;
     gap: 80px;
-    background-image: url('../assets/bg.png');
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    background: linear-gradient(to top, #FFF4DC, #FFFFFF);
+    background: 
+        url('../assets/bg.png') no-repeat center center / cover,
+        linear-gradient(to top, #FFF4DC, #FFFFFF);
+}
+.color2{
+    background-color: #95B226;
+}
+.color3{
+    background-color: #5D58F0;
+}
+.color4{
+    background-color: #3CD8E8;
 }
 .story1{
     grid-area: story1;
@@ -241,7 +268,6 @@ section{
 .round-box{
     color: white;
     padding: 15px 20px;
-    background-color: #3CD8E8;
     border-radius: 48px;
     max-width: 135px;
     margin: -35px 0px 0px 32px;
@@ -255,6 +281,7 @@ section{
     gap: 10px;
     margin-top: 32px;
     margin-bottom: 32px;
+    font-weight: 500;
 }
 .footer a{
     text-decoration: none;
@@ -302,13 +329,23 @@ section{
 }
 /* media related styles */
 @media screen and (max-width: 576px){
-    .nav-title{
-        display: none;
+    .banner,
+    nav,
+    .footer-container{
+        padding: 10px;
     }
-    .nav-button{
-        display: none;
+    nav{
+        border: .5px solid orange ;
+        padding: 12px 16px;
     }
-    .nav-links{
+    .navbar{
+        margin: 0px;
+    }
+    .nav-title,
+    .nav-links,
+    .nav-button,
+    .cbutton-area,
+    .story1{
         display: none;
     }
     #nav-icon{
@@ -324,20 +361,38 @@ section{
     .footer-container{
         flex-direction: column;
     }
+    .curriculum-container{
+        margin: 0px;
+        align-items: center;
+    }
     .stories-container{
-        max-width: 1160px;
-        margin: 0px auto;
-        display: grid;
+        padding: 10px;
         grid-template-areas: 
             'story2 story3'
             'story4 story5';
         ;
-        gap: 20px;
+        gap: 10px;
     }
-    .story1{
-        display: none;
+    .round-box p{
+        font-size: .6rem;
     }
-    .cbutton-area{
-        display: none;
+    .round-box{
+        max-width: 85px;
+        border-radius: 30px;
+        padding: 6px 12px;
+        margin: -18px 0px 0px 32px;
+    }
+    .story-title{
+        font-size: 6rem;
+        margin: 10px;
+    }
+    .c-img{
+        width: 92px;
+    }
+    .c-box{
+        width: calc(100% - 10px);
+    }
+    .marquee{
+        font-size: 1.25rem;
     }
 }
