@@ -2,6 +2,10 @@
 
 A modern, responsive website designed for a children's educational institution. This project showcases a vibrant and engaging interface that promotes early childhood education with a focus on creativity, confidence, and compassion.
 
+## 🌐 Live Demo
+
+**[View Live Website](https://hedaetshahriar.github.io/Kids-Education/)** 🚀
+
 ## 🌟 Features
 
 - **Responsive Design**: Fully responsive layout that works seamlessly across desktop, tablet, and mobile devices
@@ -31,7 +35,7 @@ A modern, responsive website designed for a children's educational institution. 
 ## 📁 Project Structure
 
 ```
-Assignment 2/
+Kids-Education/
 ├── index.html              # Main HTML file
 ├── Readme.md              # Project documentation
 ├── assets/                # Image and media files
