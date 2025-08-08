@@ -4,7 +4,7 @@ A modern, responsive website designed for a children's educational institution. 
 
 ## 🌐 Live Demo
 
-**[View Live Website](https://hedaetshahriar.github.io/Kids-Education/){:target="_blank"}** 🚀
+<a href="https://hedaetshahriar.github.io/PH-Assignment-2/" target="_blank">🚀 View Live Website</a>
 
 ## 🌟 Features
 
